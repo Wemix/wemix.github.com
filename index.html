@@ -16,7 +16,11 @@
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
-
+ul#menu_horizontal li { 
+  display : inline;
+  padding : 0 0.5em; /* Pour espacer les boutons entre eux */
+  list-style-type : none;
+}
 </style>
 </head>
 
@@ -32,7 +36,7 @@
       <div id="main" role="main">
         <div class="download-bar">
           <div class="inner">
-            <ul class="menu">
+            <ul class="menu_horizontal">
               <li class="accueil"><a href="accueil.html">Accueil</a></li>
               <li class="nous"><a href="nous.html">Qui sommes-nous ?</a></li>
               <li class="contact"><a href="contact.html">Nous contacter</a></li>
