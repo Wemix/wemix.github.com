@@ -23,6 +23,13 @@ ul#menu_horizontal li {
 ul#menu_horizontal li {
   list-style-type: none;
 }
+ul#rang_clavier li { 
+  display: inline;
+  padding: 0 0.5em; /* Pour espacer les boutons entre eux */
+}
+ul#rang_clavier li {
+  list-style-type: none;
+}
 li.contact {
   float: right;
 }
@@ -73,9 +80,11 @@ $ git checkout gh-pages
   <span class="octicon octicon-link"></span>
 </a>Que faisons-nous exactement ?</h3>
 
-<img src="http://mygaming.co.za/news/wp-content/uploads/2013/01/Gaming-Laptops-Hardware-Feature.jpg" align:"left" alt="clavier" width="192" height="108">
-<p aligne="right">Test paragraphe</p>
-
+<ul id="rang_clavier">
+  <li class="clavier">
+    <img src="http://mygaming.co.za/news/wp-content/uploads/2013/01/Gaming-Laptops-Hardware-Feature.jpg" align:"left" alt="clavier" width="192" height="108"></li>
+  <li class="texte_clavier"><p aligne="right">Test paragraphe</p></li>
+</ul>
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
