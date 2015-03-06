@@ -16,12 +16,15 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
-ul#menu_horizontal li { 
+ul#menu-horizontal li { 
   display: inline;
   padding: 0 0.5em;
 }
-ul#menu_horizontal li {
+ul#menu-horizontal li {
   list-style-type: none;
+}
+ul.sous-menu  {
+  display: none;
 }
 li.contact {
   float: right;
@@ -54,22 +57,21 @@ p span.alpha  {
         <h1 class="title">Agence de Service à la Personne</h1>
       </center>
     </header>
-  <div id="container">
-    <p class="tagline"></p>
-      <div id="main" role="main">
-        <div class="download-bar">
-          <div class="inner">
-            <ul id="menu_horizontal">
-              <!-- <li class="accueil"><a href="index.html">Accueil</a></li> */ -->
-              <li class="moi"><a href="mon-metier.html">Mon Métier</a></li>
-                <ul class="sous-menu-mon-metier">
-                  <li class"smmm-1"><a href="">Employée Familliale</a></li>
-                  <li class"smmm-2"><a href="">Nourisse aux Domicile des Particuliers</a></li>
-                </ul>
-              </li>
-              <li class="contact"><a href="">Contact</a></li>
-            </ul>
-          </div>
+<div id="container">
+  <p class="tagline"></p>
+    <div id="main" role="main">
+        div class="download-bar">
+        <div class="inner">
+          <ul id="menu-horizontal">
+            <!-- <li class="accueil"><a href="index.html">Accueil</a></li> */ -->
+            <li class="lien-menu"><a href="mon-metier.html">Mon Métier</a></li>
+              <ul class="sous-menu">
+                <li class"lien-sous-menu"><a href="">Employée Familliale</a></li>
+                <li class"lien-sous-menu"><a href="">Garde d'enfants aux Domicile des Particuliers</a></li>
+                <li class="contact"><a href="">Contact</a>
+                </li>
+              </ul>
+</div>
 <span class="blc"></span><span class="trc"></span>
         </div>
 <article class="markdown-body">
