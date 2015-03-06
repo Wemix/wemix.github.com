@@ -20,8 +20,11 @@
   display: inline;
   list-style: none;
   padding: 0; margin:0; border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-#menu li  {
+#menu li:hover > .sousMenu { display: block; }  {
   list-style: none;
   float: left;
   width: 150px;
@@ -53,6 +56,7 @@
   background-color: #F2462E;
 }
 #menu.sous-menu {
+  display: none;
   margin: 0; padding: 0;
   list-style:none;
 }
