@@ -17,31 +17,31 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 /* Position et décoration */
+/* partie positionnement et déco */
 #menu a { 
 	display:block; 
 	color: #fff; 
 	text-decoration:none;
 }
-#menu li,
-#menu li li	{
+#menu > li,
+#menu > li li {
 	position: relative;
-	text-align: center;
 	font-size: 8pt;
+	text-align: center;
 	display:inline-block;
 	width: 110px;
 	padding: 6px 15px;
 	background-color: #777;
 	background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
 }
-
 #menu li li { background: transparent none; }
 #menu li li a { color: #444; }
-#menu li li:hover { background:#C0C0C0; }
-#menu li:first-child	{
+#menu li li:hover { background:#eee; }
+#menu li:first-child {
 	border-right: 1px solid #777;
 	border-radius: 8px 0 0 8px;
 }
-#menu li li	{
+#menu li li {
 	border-left: 1px solid #aaa;
 	border-right: 1px solid #777;
 }
@@ -54,7 +54,6 @@
 	background-color: #999;
 	background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);
 }
-/* Fixation max-height */
 #menu ul {
 	position: absolute;
 	top: 28em; left:0;
@@ -66,7 +65,6 @@
 	transition: 0.1s max-height 0.3s;
 	border-radius: 0 0 8px 8px;
 }
-/* Changement valeur max-height au :hover */
 #menu li:hover ul {
 	max-height:13em;
 }
