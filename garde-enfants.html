@@ -16,64 +16,57 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
-/* Position et décoration */
-#menu a { 
-	display:block; 
-	color: #fff; 
-	text-decoration:none;
+#menu a {
+display:block;
+color: #fff;
+text-decoration:none;
 }
 #menu li,
-#menu li li	{
-	position: relative;
-	text-align: center;
-	font-size: 8pt;
-	display:inline-block;
-	width: 110px; padding: 6px 15px;
-	background-color: #777;
-	background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
+#menu li li {
+position: relative;
+font-size: 8pt;
+text-align: center;
+display:inline-block;
+width: 110px;
+padding: 6px 15px;
+background-color: #777;
+background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
 }
-
-#menu > li li { background: transparent none; }
-#menu > li li a { color: #444; }
-#menu > li li:hover { background:#C0C0C0; }
-
-#menu > li:first-child	{
-	border-right: 1px solid #777;
-	border-radius: 8px 0 0 8px;
+#menu li li { background: transparent none; }
+#menu li li a { color: #444; }
+#menu li li:hover { background:#eee; }
+#menu li:first-child {
+border-right: 1px solid #777;
+border-radius: 8px 0 0 8px;
 }
-#menu li li	{
-	border-left: 1px solid #aaa;
-	border-right: 1px solid #777;
+#menu li li {
+border-left: 1px solid #aaa;
+border-right: 1px solid #777;
 }
 #menu li:last-child {
-	border-right:0;
-	border-left: 1px solid #aaa;
-	border-radius: 0 8px 8px 0 ;
+border-right:0;
+border-left: 1px solid #aaa;
+border-radius: 0 8px 8px 0 ;
 }
 #menu li:hover {
-	background-color: #999;
-	background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);
+background-color: #999;
+background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);
 }
-/* Fixation max-height */
 #menu ul {
-	position: absolute;
-	top: 28px; left:0;
-	max-height:0em;	
-	margin:0; padding:0;
-	background-color:#ddd;
-	background-image: linear-gradient(#fff,#ddd);
-	overflow:hidden;
-	transition: 0.1s max-height 0.3s;
-	border-radius: 0 0 8px 8px;
+position: absolute;
+top: 28px; left:0;
+max-height:0em;
+margin:0; padding:0;
+background-color:#ddd;
+background-image: linear-gradient(#fff,#ddd);
+overflow:hidden;
+transition: 0.1s max-height 0.3s;
+border-radius: 0 0 8px 8px;
 }
-/* Changement valeur max-height au :hover */
 #menu li:hover ul {
-	max-height:13em;
+max-height:13em;
 }
-div.bloque-ou-exercer	{
-	
-}
-.image-ou-exercer	{
+p span.image-ou-exercer	{
   float: left;
   vertical-align: middle;
   margin-right: 5%;
@@ -159,10 +152,8 @@ des services à la personne s'exerce au domicile privé du particulier-employeur
 
 <h3>Où l'exercer ?</h3>
 
-<div class="bloque-ou-exercer">
-<p><img src="http://mygaming.co.za/news/wp-content/uploads/2013/01/Gaming-Laptops-Hardware-Feature.jpg" class="image-ou-exercer" width="192" height="108">
->> Texte ici <<</p>
-</div>
+<p><span class="image-ou-exercer"></span><img src="http://mygaming.co.za/news/wp-content/uploads/2013/01/Gaming-Laptops-Hardware-Feature.jpg" width="192" height="108"></span></p>
+<p><span class="texte-ou-exercer"> >> Texte ici << </span></p>
 
 <h3>Les qualités requises</h3>
 
