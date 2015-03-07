@@ -33,11 +33,11 @@
 	background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
 }
 
-#menu > li li { background: transparent none; }
-#menu > li li a { color: #444; }
-#menu > li li:hover { background:#C0C0C0; }
+#menu li li { background: transparent none; }
+#menu li li a { color: #444; }
+#menu li li:hover { background:#C0C0C0; }
 
-#menu > li:first-child	{
+#menu li:first-child	{
 	border-right: 1px solid #777;
 	border-radius: 8px 0 0 8px;
 }
@@ -59,7 +59,7 @@
 	position: absolute;
 	top: 28px; left: 0;
 	max-height: 0em;	
-	margin: 0; padding: 0; border-left:0;
+	margin: 0; padding: 0;
 	background-color:#ddd;
 	background-image: linear-gradient(#fff,#ddd);
 	overflow:hidden;
@@ -70,17 +70,14 @@
 #menu li:hover ul {
 	max-height:13em;
 }
-div.bloque-ou-exercer	{
-	
-}
-.image-ou-exercer	{
+p span.image-ou-exercer	{
   float: left;
   vertical-align: middle;
   margin-right: 5%;
   margin-top: 2%;
   margin-bottom: 2%;
 }
-p span.texte_arma  {
+p span.texte-ou-exercer  {
   text-align: left;
 }
 p span.qualites  {
@@ -89,6 +86,7 @@ p span.qualites  {
   margin-top: 0%;
   margin-bottom: 2%;
 }
+
 </style>
 </head>
 
@@ -143,10 +141,8 @@ l'employée familliale par sa présence, contribue à maintenir la personne auto
 
 <h3>Où l'exercer ?</h3>
 
-<div class="bloque-ou-exercer">
-<p><img src="http://mygaming.co.za/news/wp-content/uploads/2013/01/Gaming-Laptops-Hardware-Feature.jpg" class="image-ou-exercer" width="192" height="108">
->> Texte ici <<</p>
-</div>
+<p><span class="image-ou-exercer"><img src="http://mygaming.co.za/news/wp-content/uploads/2013/01/Gaming-Laptops-Hardware-Feature.jpg" class="image-ou-exercer" width="192" height="108"></span></p>
+<p><span class="texte-ou-exercer">>> Texte ici <<</span></p>
 
 <h3>Les qualités requises</h3>
 
