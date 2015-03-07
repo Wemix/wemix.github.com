@@ -3,7 +3,7 @@
 <!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
 <head>
-<title>Garde d'Enfants</title>
+<title>Agence de Service à la Personne</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -14,98 +14,183 @@
 
   <title>Wemix.GitHub.com</title>
   <meta name="description" content="">
-
   <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
-ul#menu_horizontal li { 
-  display: inline;
-  padding: 0 0.5em; /* Pour espacer les boutons entre eux */
+/* Position et décoration */
+#menu a { 
+	display:block; 
+	color: #fff; 
+	text-decoration:none;
 }
-ul#menu_horizontal li {
-  list-style-type: none;
+#menu li,
+#menu li li	{
+	position: relative;
+	text-align: center;
+	font-size: 8pt;
+	display:inline-block;
+	width: 110px; padding: 6px 15px;
+	background-color: #777;
+	background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
 }
-li  {
+
+#menu > li li { background: transparent none; }
+#menu > li li a { color: #444; }
+#menu > li li:hover { background:#C0C0C0; }
+
+#menu > li:first-child	{
+	border-right: 1px solid #777;
+	border-radius: 8px 0 0 8px;
 }
-.contact {
+#menu li li	{
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #777;
+}
+#menu li:last-child {
+	border-right:0;
+	border-left: 1px solid #aaa;
+	border-radius: 0 8px 8px 0 ;
+}
+#menu li:hover {
+	background-color: #999;
+	background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);
+}
+/* Fixation max-height */
+#menu ul {
+	position: absolute;
+	top: 28px; left:0;
+	max-height:0em;	
+	margin:0; padding:0;
+	background-color:#ddd;
+	background-image: linear-gradient(#fff,#ddd);
+	overflow:hidden;
+	transition: 0.1s max-height 0.3s;
+	border-radius: 0 0 8px 8px;
+}
+/* Changement valeur max-height au :hover */
+#menu li:hover ul {
+	max-height:13em;
+}
+li.contact {
   float: right;
+}
+div.bloque-ou-exercer	{
+	
+}
+.image-ou-exercer	{
+  float: left;
+  vertical-align: middle;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+p span.texte_arma  {
+  text-align: left;
+}
+p span.qualites  {
+  float: right;
+  margin-left: 5%;
+  margin-top: 0%;
+  margin-bottom: 2%;
 }
 </style>
 </head>
 
 <body>
-
   <div class="wrapper">
     <header>
       <center>
-        <h1 class="title">Geetech Entreprise</h1>
-        <h2>Bienvenue</h2>
+        <h2 class="title">Agence de Service à la Personne</h2>
       </center>
     </header>
-  <div id="container">
-    <p class="tagline"></p>
-      <div id="main" role="main">
-        <div class="download-bar">
-          <div class="inner">
-            <ul id="menu_horizontal">
-              <li class="accueil"><a href="index.html">Accueil</a></li>
-              <li class="nous"><a href="nous.html">Qui sommes-nous ?</a></li>
-              <li class="contact"><a href="contact.html">Nous contacter</a></li>
-            </ul>
-          </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>
-<a id="Welcome to Github Pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bienvenue sur les Pages Github</h3>
+<div id="container">
+  <p class="tagline"></p>
+    <div id="main" role="main">
+      <div class="download-bar">
+        <div class="inner">
+        <!-- Ancien emplacement menu -->
+	</div>
+<span class="blc"></span><span class="trc"></span>
+</div>
+<article class="markdown-body">
+<ul id="menu">
+	<li><a href="#">Accueil</a>
+		<!-- <ul>
+			<li><a href="#">-- ? --</a></li>
+			<li><a href="#">-- ? --</a></li>
+		</ul>
+	</li> --><li><a href="#">Mon Métier</a>
+		<ul>
+			<li><a href="employee-familliale.html">Employée Familliale</a></li>
+			<li><a href="garde-enfants.html">Garde d'Enfants</a></li>
+		</ul>
+	</li><li><a href="#">Contact</a>
+		<!-- <ul>
+			<li><a href="#">Level 3.1</a></li>
+			<li><a href="#">Level 3.2</a></li>
+			<li><a href="#">Level 3.3</a></li>
+		</ul> -->
+	</li>
+</ul>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<h2><center>Garde d'Enfants aux Domiciles des Particuliers</center></h1>
 
-<!--<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>-->
+<h3><a id="Welcome to Github Pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>En quoi il consiste ?</h3>
+<p>La garde d’enfants consiste à exercer une garde active  d’enfants à domicile  en présence ou non de l’employeur. Selon l’âge
+de l’enfant, la garde d’enfants consiste à réaliser différentes activités :
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<ul>
+  <li>
+contribuer au développement psychomoteur de l’enfant
+participer à l’apprentissage de la propreté
+effectuer la toilette de l’enfant, l’habiller, le changer et veiller à son état de santé général
+préparer et aider à la prise des repas, préparer le gouter
+contribuer à l’éveil de l’enfant et le stimuler lors de la réalisation de ses activités
+accompagner l’enfant à l’école et le prendre en charge à la sortie de l’école et l’accompagner jusqu’au domicile;
+assurer les travaux courants d’entretien liés à l’environnement de l’enfant : 
+- linge (lessive, repassage, couture)
+ - matériel utilisé pour l’enfant (toilette, repas, jeux)
+ - pièces à vivre 
+  </li>
+</ul>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+La garde d’enfants consiste également à assurer et à veiller à la sécurité de l’enfant en permanence. Ce métier du secteur
+des services à la personne s'exerce au domicile privé du particulier-employeur.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<h3>Où l'exercer ?</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<div class="bloque-ou-exercer">
+<p><img src="http://mygaming.co.za/news/wp-content/uploads/2013/01/Gaming-Laptops-Hardware-Feature.jpg" class="image-ou-exercer" width="192" height="108">
+>> Texte ici <<</p>
+</div>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<h3>Les qualités requises</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p><span class="qualites"><img src="http://www.maison-emploi-vamb.fr/IMG/png/Fotolia_30928840_S_sap_of_locaux.png" alt="qualites" width="192" height="108"></img></span></p>
+<p><span class="texte_arma">Une personne sérieuse, efficace, qui sait gérer les affaires quotidiennes et en qui l'on peut avoir une totale confiance 
+Consciencieuse et rapide, elle sait prendre des initiatives. Autonome dans son travail, elle doit cependant respecter 
+les consignes de son employeur.
+</span>
+</span></p>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<br />
+<br />
+<br />
 
-<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </article>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-
-      <p><a href="https://github.com/Wemix" class="avatar"><img src="https://avatars3.githubusercontent.com/u/10994325?v=3&amp;s=60" width="48" height="48"></a>View <a href="https://github.com/Wemix">Wemix</a> on <a href="https://www.github.com">GitHub</a></p>
-
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
+<footer>
+  <div class="owner">
+    <p><a href="https://github.com/Wemix" class="avatar"><img src="https://avatars3.githubusercontent.com/u/10994325?v=3&amp;s=60" width="48" height="48"></a>Profil <a href="https://www.github.com">GitHub </a>de <a href="https://github.com/Wemix">Wemix</a></p>
   </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/Wemix/wemix.github.com/tarball/master" class="tar">tar</a><a href="https://github.com/Wemix/wemix.github.com/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
+  <div class="creds">
+    <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
   </div>
+</footer>
+<div class="current-section">
+  <a href="#top">Scroll to top</a>
+  <a href="https://github.com/Wemix/wemix.github.com/tarball/master" class="tar">tar</a><a href="https://github.com/Wemix/wemix.github.com/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+  <p class="name"></p>
+</div>
 
-  
 </body>
 </html>
+
