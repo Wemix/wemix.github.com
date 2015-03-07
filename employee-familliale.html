@@ -25,10 +25,9 @@
 #menu li,
 #menu li li	{
 	position: relative;
-	text-align: center;
-	font-size: 8pt;
 	display:inline-block;
-	width: 110px; padding: 6px 15px;
+	width: 110px;
+	padding: 6px 15px;
 	background-color: #777;
 	background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
 }
@@ -36,7 +35,6 @@
 #menu li li { background: transparent none; }
 #menu li li a { color: #444; }
 #menu li li:hover { background:#C0C0C0; }
-
 #menu li:first-child	{
 	border-right: 1px solid #777;
 	border-radius: 8px 0 0 8px;
@@ -57,13 +55,13 @@
 /* Fixation max-height */
 #menu ul {
 	position: absolute;
-	top: 28px; left: 0;
-	max-height: 0em;	
-	margin: 0; padding: 0;
+	top: 2em; left:0;
+	max-height:0em;	
+	margin:0; padding:0;
 	background-color:#ddd;
 	background-image: linear-gradient(#fff,#ddd);
 	overflow:hidden;
-	transition: 0.1s max-height 0.3s;
+	transition: 1s max-height 0.3s;
 	border-radius: 0 0 8px 8px;
 }
 /* Changement valeur max-height au :hover */
